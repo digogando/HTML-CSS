@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(34, 239, 154);
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'Android';
+    src: url('fontes/idroid.otf') format('opentype'), url('fontes/idroid.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title-header{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-family: 'Android','Courier New', Courier, monospace;
+    font-size: 2em;
+}
+
+h2{
+    font-family: 'Android','Courier New', Courier, monospace;
+    font-size: 1.5em;
+}
+
+header {
+    background-image: linear-gradient(180deg, #049c62, #0e7128);
+    padding: 10px;
+    margin: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+
+main {
+    background-color: white;
+    width: 900px;
+    padding: 10px;
+    margin:auto;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background-color: antiquewhite;
+    
+}

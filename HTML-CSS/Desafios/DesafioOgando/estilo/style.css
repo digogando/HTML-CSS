@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+:root {
+    --cor0: #EEFBF2;
+    --cor1: #BEC6BE;
+    --cor2: #54d3fa;
+    --cor3: #2b81fa;
+    --cor4: #163dea;
+    --cor5: #27026d;
+    --cor6: #061d31;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Ultra', serif;
+    --fonte-personalizada: 'Black Ops One', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor2);
+    margin: 0px;
+}
+
+h1 {
+    font-family: 'Honk', 'Courier New';
+    font-size: 1.5em;
+}
+
+a.externo:after {
+    content: '\00A0\1F517';
+}
+
+header {
+    background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 64%, rgba(0,198,255,1) 100%);
+    padding-top: 40px;
+    text-align: center;
+    min-height: 150px;
+}
+
+header > h1 {
+    color: var(--cor1);
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 3px 3px 0px rgba(2, 128, 255, 0.592);
+}
+
+header > p {
+    color: var(--cor1);
+    font-family: var(--fonte-padrao);
+    font-size: 1.5em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+}
+
+nav {
+    background-color: rgba(2,0,36,1);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+    text-align: center;
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor6);
+    color: var(--cor2);
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-personalizada);
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    text-indent: 8px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify; 
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 1px 4px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+.cursos {
+    background-color: white;
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.cursos > h2 {
+    color: var(--cor5);
+    font-family: var(--fonte-personalizada);
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    text-indent: 8px;
+}
+
+.profissao {
+    background-color: white;
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.profissao > h2 {
+    color: var(--cor5);
+    font-family: var(--fonte-personalizada);
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    text-indent: 8px;
+}
+
+.extracurricular {
+    background-color: white;
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.extracurricular > h2 {
+    color: var(--cor5);
+    font-family: var(--fonte-personalizada);
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    text-indent: 8px;
+}
+
+.redes {
+    background-color: white;
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.redes > h2 {
+    color: var(--cor5);
+    font-family: var(--fonte-personalizada);
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    text-indent: 8px;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer > p > a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
