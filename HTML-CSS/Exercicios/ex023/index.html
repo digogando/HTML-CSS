@@ -15,12 +15,23 @@
             border-collapse: collapse;
         }
 
-        td {
+        td, th {
             border: 1px solid black;
-            padding: 8px;
+            padding: 10px;
             text-align: center; /*Alinhamento Horizontal*/
             vertical-align: middle;
         }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+
     </style>
 </head>
 <body>
@@ -50,6 +61,59 @@
             <td>B4</td>
             <td>C4</td>
         </tr>
+    </table>
+
+    <h1>Uso de Tabelas Grandes</h1>
+
+    <table>
+        <caption>População dos Estados do Brasil</caption>
+        <thead>
+            <th>Estado</th>
+            <th>População</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Acre</td>
+                <td>830.0</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14.141.626</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td>3.833.712</td>
+            </tr>
+            </tr>
+                <td>Mato Grosso do Sul</td>
+                <td>2.757.013</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>20.539.989</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>8.121.025</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td>3.974.687</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>16.055.174</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45990949,00</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+
+        </tfoot>
     </table>
     
 </body>
